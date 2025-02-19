@@ -1,3 +1,63 @@
 body {
-    color:#404040
+    padding: 0;
+    margin: auto;
+    color: #404040;
+    font-size: 15px;
+    font-family: Georgia, sans-serif, Times, serif;
+    width: 1024px;
+    background-attachment: fixed;
+}
+
+.link {
+    color: #A4A400;
+}
+
+.heading {
+    color: #A4A400;
+    background-color: #F0F0F0;
+    font-family: Lucida Sans Unicode, Helvetica, Ar ial, sans-serif;
+    text-align: center;
+    font-size: 29px;
+    text-decoration: underline;
+}
+
+.sub-heading {
+    color: #A4A400;
+    background-color: #F0F0F0;
+    font-family: Lucida Sans Unicode, Helvetica, Ar ial, sans-serif;
+    font-size: 20px;
+    text-decoration: underline;
+}
+
+.saperator {
+    border: 1px solid black;
+}
+
+.text-underline {
+    text-decoration: underline;
+    border-bottom: 1px dotted black;
+}
+
+.text-bold {
+    font-weight: bold;
+    background-color: #FFFFA8;
+    font-style: italic;
+}
+
+.comment-highlight {
+    background-color: #FFFFA8;
+    font-style: italic;
+}
+
+.link {
+    text-decoration: none;
+    color: #A4A400;;
+}
+
+.copyright {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+ul {
+    list-style-image: url('./pie.svg');
 }
