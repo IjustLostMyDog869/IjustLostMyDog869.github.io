@@ -5,7 +5,7 @@ body {
     font-size: 15px;
     font-family: Georgia, sans-serif, Times, serif;
     width: 1024px;
-    background-attachment: fixed;
+    background-image: url("https://www.rose-hulman.edu/class/csse/csse290-WebProgramming/images/silverware.jpg");
 }
 
 .link {
@@ -29,18 +29,8 @@ body {
     text-decoration: underline;
 }
 
-.saperator {
-    border: 1px solid black;
-}
-
-.text-underline {
-    text-decoration: underline;
-    border-bottom: 1px dotted black;
-}
-
 .text-bold {
     font-weight: bold;
-    background-color: #FFFFA8;
     font-style: italic;
 }
 
@@ -48,16 +38,6 @@ body {
     background-color: #FFFFA8;
     font-style: italic;
 }
-
-.link {
-    text-decoration: none;
-    color: #A4A400;;
-}
-
 .copyright {
     font-family: 'Courier New', Courier, monospace;
-}
-
-ul {
-    list-style-image: url('./pie.svg');
 }
