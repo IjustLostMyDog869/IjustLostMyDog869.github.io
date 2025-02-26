@@ -1,0 +1,38 @@
+/* Jacob Casiano 2/26/25 */
+body{
+    color: #000000;
+    background-color: #B8D1EB;
+    font-family: "Times New Roman", serif;
+}
+
+ul {
+    list-style-type: none;
+}
+
+#outerwrapper {
+    width: 70%;
+    margin: 0 auto 0 auto;
+}
+
+#main {
+    background-color: #C5A98B;
+    padding: 10px;
+    clear: both;
+}
+
+.floatleft{
+    float: left;
+    margin-right: 3%;
+}
+
+.floatright{
+    float: right;
+    margin-left: 3%;
+
+}
+
+footer {
+    font-size: .75em;
+    text-align: center;
+    clear: both;
+}
