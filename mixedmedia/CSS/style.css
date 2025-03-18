@@ -1,0 +1,25 @@
+*{
+    color: rgb(0, 0, 0);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+table, th, td{
+    border: 2px solid black;
+    background: color rgb(250, 8, 8)
+}
+body{
+    background: linear-gradient(#3ea2e6,#ffffff)
+}
+th{
+    background: linear-gradient(#3ea2e6,#f32d2d);
+}
+td{
+    background: color rgb(33, 33, 218)
+}
+img,video,audio{
+    border-radius: 5px;
+    border: 2px solid color cornflowerblue;
+
+}
+audio{
+    border-radius: 20px;
+}

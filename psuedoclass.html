@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* Change the highlight color */
+        *::selection {background:rgb(151, 2, 151);}
+        *::-moz-selection {background:rgb(151, 2, 151);}
+
+        a:link {
+            color: green;
+            text-decoration: none;
+            padding: 10px;
+        }
+
+        a:hover {
+            color: blue;
+            background: gray;
+            text-decoration: underline;
+
+        }
+
+        a:visited {color: springgreen;}
+        a:active {color: blanchedalmond;}
+
+        div:not(:last-child) {margin-bottom: 2rem;}
+
+        input {
+            padding: 6px 12px 6px 12px;
+            border: 2px solid purple;
+            border-radius: 3px;
+            color: blue;
+            margin: 2px;
+        }
+
+    </style>
+</head>
+<body>
+    <div>
+        <a hreef="#">Link 1</a>
+        <a hreef="#">Link 2</a>
+        <a hreef="#">Link 3</a>
+    </div>
+
+    <div>
+        <input type="text" placeholder="some text"/>
+        <input type="submit" value="submit"/>
+    </div>
+
+    <div>
+        <img src="https://picsum.photos/id/10/200" alt="placeholder 1">
+        <img src="https://picsum.photos/id/10/200" alt="placeholder 2">
+        <img src="https://picsum.photos/id/10/200" alt="placeholder 3">
+    </div>
+</body>
+</html>
