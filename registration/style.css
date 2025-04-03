@@ -1,51 +1,57 @@
 fieldset {
-    background:#edf0f5;
-    width: fit-content;
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    margin-left: auto;
-    margin-right: auto;
+   background:#edf0f5;
+   width: fit-content;
+   font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+   margin-left: auto;
+   margin-right: auto;
 }
 
 h1 {
-    text-align: left;
+   text-align: left;
 }
 
-* {margin: 3px;}
+* {margin: 3px;
+text-align:left;}
 
 
- button {
-    background-color: #659d50;
-    width:130px;
-    color:white;
-    border-color:#659d50;
-    border-radius: 5px;
-    height: 30px;
- }
- 
+button {
+   background-color: #659d50;
+   width:130px;
+   color:white;
+   border-color:#659d50;
+   border-radius: 5px;
+   height: 30px;
+}
 
- a, h6 {
-    text-decoration:none;
-    font-size:xx-small;
- }
 
- a{
-    color:rgb(10, 10, 161);
-    font-weight:bold;
-    margin:initial;
- }
+a, h6 {
+   text-decoration:none;
+   font-size:xx-small;
+
+}
+
+a{
+   color:rgb(20, 20, 160);
+   font-weight:bold;
+   margin:initial;
+
+}
 
 #main {
-  display:flex;
-   margin: 0;
-  a{
-   margin-left:10px;
-   margin-top:5px;
-  }
+ display:flex;
+  margin: 0;
+  padding: 0%;
+ a{
+  margin-left:10px;
+  margin-top:5px;
+  margin-bottom:5px;
+ }
 }
 
 fieldset {
-   margin-top:100px;
+  margin-top:100px;
+  margin-bottom:100px;
 }
 
 
-                                                                                                                        
+                                                                                                                       
