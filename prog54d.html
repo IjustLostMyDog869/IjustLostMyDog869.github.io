@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prog65h</title>
+</head>
+<body>
+    <label for="Height">Height: </label>
+    <input type="number" id="Height">
+
+    <label for="Base">Base: </label>
+    <input type="number" id="Base">
+
+    <button onclick="
+        let base = Number(document.getElementById('Height').value);
+        let height = Number(document.getElementById('Base').value);
+
+        let hypotenuse = Math.sqrt(base ** 2 + height ** 2);
+
+
+        let area = (base * height) / 2;
+
+        let perimeter = base + height + hypotenuse;
+
+        hypotenuse = hypotenuse.toFixed(2);
+        area = area.toFixed(2);
+        perimeter = perimeter.toFixed(2);
+
+        // Display results
+        document.writeln('The base is ' + base + '<br>');
+        document.writeln('The height is ' + height + '<br>');
+        document.writeln('The hypotenuse = ' + hypotenuse + '<br>');
+        document.writeln('The Area of the triangle = ' + area + '<br>');
+        document.writeln('The Perimeter of the triangle = ' + perimeter);
+    ">Calculate</button>
+</body>
+</html>
