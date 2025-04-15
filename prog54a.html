@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>prog54a</title>
+</head>
+<body>
+    <h1>Miles Per Gallon Calculator</h1>
+    <select id="sl">
+        <option value="" selected disabled>Choose a car</option>
+        <option value="1970 vwbug">1970 VW Bug</option>
+        <option value="1979 Firebird">1979 Firebird</option>
+        <option value="1990 Subaru">1990 Subaru</option>
+        <option value="1979 Cutlass">1979 Cutlass</option>
+    </select>
+    <button onclick="calc()">Calculate</button>
+    <p id="output"></p>
+
+    <script>
+        function calc() {
+            let car = document.getElementById("sl").value;
+            let miles = 0;
+            let gallons = 0;
+            let mpg = 0;
+
+            // Use if statements to assign miles and gallons based on the selected car
+            if (car === "1970 vwbug") {
+                miles = 286;
+                gallons = 9;
+            }
+
+            if (car === "1979 Firebird") {
+                miles = 412;
+                gallons = 40;
+            }
+
+            if (car === "1990 Subaru") {
+                miles = 361;
+                gallons = 18;
+            }
+
+            if (car === "1979 Cutlass") {
+                miles = 161;
+                gallons = 11;
+            }
+
+            // Calculate MPG
+            mpg = miles / gallons;
+
+            // Display the result
+            let out = document.getElementById("output");
+            if (car) {
+                out.innerText = mpg.toFixed(1) + " m/g";
+            } else {
+                out.innerText = "Please select a car.";
+            }
+        }
+    </script>
+</body>
+</html>

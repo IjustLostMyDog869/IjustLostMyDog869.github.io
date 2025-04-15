@@ -14,5 +14,37 @@
 
         const BASE_RATE = 0.0475; 
         const SURCHARGE_RATE = 0.10;
+        const CITY_TAX_RATE = 0.03; 
+        const LATE_PENALTY_RATE = 0.04; 
+
+        let kwhUsed = Number(document.getElementById('kwh').value);
+
+        let baseRate = kwhUsed * BASE_RATE;
+        let surcharge = baseRate * SURCHARGE_RATE;
+        let cityTax = baseRate * CITY_TAX_RATE;
+        let total = baseRate + surcharge + cityTax;
+        let latePayment = total * (1 + LATE_PENALTY_RATE);
+
+        baseRate = baseRate.toFixed(2);
+        surcharge = surcharge.toFixed(2);
+        cityTax = cityTax.toFixed(2);
+        total = total.toFixed(2);
+        latePayment = latePayment.toFixed(2);
+
+        document.getElementById('output').innerHTML = `
+            <p><strong>C O M P S C I Electric</strong></p>
+            <p>------------------------------------------------</p>
+            <p>Kilowatts Used: ${kwhUsed}</p>
+            <p>------------------------------------------------</p>
+            <p>Base Rate: ${kwhUsed} @ $${BASE_RATE.toFixed(4)} = $${baseRate}</p>
+            <p>Surcharge: $${surcharge}</p>
+            <p>City Tax: $${cityTax}</p>
+            <p>------------------------------------------------</p>
+            <p><strong>Pay this amount: $${total}</strong></p>
+            <p><strong>After May 20th Pay: $${latePayment}</strong></p>
+        `;
+    ">Calculate</button>
+
+    <div id="output"></div>
 </body>
 </html>
