@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="out"></p>
+    <script>
+        let msg = "Number &emsp; Square &emsp; Square Root<br>";
+        let lcv = 1;
+        while (lcv <= 50) {
+            msg += lcv + "&emsp;" + (lcv ** 2) + 
+                         "&emsp;" + Math.sqrt(lcv).toFixed(2) + "<br>";
+            lcv++;
+        }
+        document.getElementById("out").innerHTML = msg;
+    </script>
+</body>
+</html>
