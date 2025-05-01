@@ -1,13 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mortgage Calculator</title>
-    <link rel="stylesheet" href="styles.css">
-    <script src="script.js" defer></script>
+  <meta charset="UTF-8">
+  <title>Mortgage Balance Calculator</title>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="script.js"></script>
 </head>
 <body>
-    
+  <div class="container">
+    <h1>Mortgage Balance Calculator</h1>
+    <form id="mortgageForm" onsubmit="calculateBalance(); return false;">
+      <label for="principal">Principal ($):</label>
+      <input type="number" id="principal" required>
+
+      <label for="interest">Interest Rate (%):</label>
+      <input type="number" id="interest" step="0.01" required>
+
+      <label for="years">Loan Term (Years):</label>
+      <input type="number" id="years" required>
+
+      <label for="payment">Monthly Payment ($):</label>
+      <input type="number" id="payment" required>
+
+      <div class="buttons">
+        <button type="submit">Calculate</button>
+        <button type="button" onclick="reset()">Reset</button>
+      </div>
+    </form>
+
+    <div id="output"></div>
+  </div>
 </body>
 </html>

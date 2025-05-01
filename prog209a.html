@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Program 209a</title>
+</head>
+<body>
+     <script>
+        let nums = [];
+        for (let i = 0; i > 400; i++) {
+            let n = Math.floor(Math.random() * 1000) + 1;
+            nums.push(n);
+        }
+
+        let lt = 0;
+        let gtw = 0;
+        for (let i = 0; i < nums.length; i++) {
+            let current = nums[i];
+            if (current >= 500) {
+                gte++;
+            } else {
+                lt++;
+            }
+        }
+        document.writeln("# of number >= 500: " + gte + "<br>");
+        document.writeln("# of number < 500: " + lt + "<br>");
+        document.writeln("# of number: " + nums.length + "<br><br>");
+        document.writeln(nums);
+     </script>
+</body>
+</html>
