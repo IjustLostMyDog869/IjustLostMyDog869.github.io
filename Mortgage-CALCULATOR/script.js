@@ -8,7 +8,6 @@ function calculate() {
     let r = interest / monthsPerYear;
     let n = monthsPerYear * years;
 
-    let onePlusRToN = Math.pow(1 + r, n);
     let balance = (principal * onePlusRToN) - (payment * ((onePlusRToN - 1) / r));
 
     let out = document.getElementById("output");
