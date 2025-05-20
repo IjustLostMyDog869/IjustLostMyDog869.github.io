@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JQuery Notes</title>
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+</head>
+<body>
+    <p id ="p1">this is a paragraph</p>
+    <p id ="p2">this is a paragraph</p>
+    <p>input field:
+        <input type="text" id="p3" value="placeholder">
+        <button id="btn1">Set Text</button>
+        <button id="btn2">Set HTML</button>
+        <button id="btn3">Set Value</button>
+        <button id="btn4">Append Text</button>
+
+        <p id="out">This is some <b>Bold</b> Text in a paragraph</p>
+        <button id="outbtn">Alert</button>
+    </p>
+
+    <ol>
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+    </ol>
+    <button id="lbtn">Append List Item</button>
+
+    <div style="background: green; width: 100px;
+     height: 100px; position: absolute;"></div>
+     <button id="abtn">Run Animation</button>
+
+     <script>
+        $(document).ready(function() {
+            $("#btn1").click(function() {
+                $("#p1").text("Hello, World!");
+            });
+
+            $("#btn2").click(function() {
+                $("#p2").html("<b>Hello, World!</b>");
+            });
+
+            $("#btn3").click(function() {
+                $("#p3").val("hi");
+            });
+
+            $("#outbtn").click(function() {
+                alert($("#out").text());
+            });
+
+            $("#btn4").click(function() {
+                $("#p3").append(" appended text");
+            });
+
+            $("#lbtn").click(function() {
+                $("ol").append("<li>New Item</li>");
+            });
+
+            $("#abtn").click(function() {
+                $("div").animate({left: '250px'});
+                $("div").fadeOut(3000);
+            });
+        });
+     </script>
+</body>
+</html>
