@@ -3,68 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>What Color Is It?</title>
     <style>
-        body {
-            background-color: black;
+        * {
+            transition: all 0.2s;
             color: white;
-            font-family: Arial, sans-serif;
+            font-family: Helvetica, Arial, sans-serif;
             text-align: center;
-            margin-top: 20%;
         }
-        h1 {margin-top: 40vh; font-size: 2em;}
-        p {font-size: 2em;}
-        #clock {
-            font-size: 5em;
-            color: white;
-        }
+        h1 { margin-top: 40vh; font-size: 80px; }
+        p { margin-top: 5%; font-size: 30px; }
     </style>
 </head>
-<body>
+<body id="bdy">
     <h1 id="clock">00:00:00</h1>
     <p id="hex">#000000</p>
     <script>
-        function getRandomColor() {
-            const letters = '0123456789ABCDEF';
-            let color = '#';
-            for (let i = 0; i < 6; i++) {
-                color += letters[Math.floor(Math.random() * 16)];
-            }
-            return color;
+        function updateTime() {
+            let date = new Date();
+            let s = ("0" + date.getSeconds()).slice(-2);
+            let m = ("0" + date.getMinutes()).slice(-2);
+            let h = ("0" + date.getHours()).slice(-2);
+            let hex = "#" + h + m + s;
+            let hms = h + ":" + m + ":" + s;
+            document.getElementById("clock").innerHTML = hms;
+            document.getElementById("hex").innerHTML = hex;
+            document.getElementById("bdy").style.backgroundColor = hex;
         }
-
-        function updateClock() {
-            const now = new Date();
-            const hours = String(now.getHours()).padStart(2, '0');
-            const minutes = String(now.getMinutes()).padStart(2, '0');
-            const seconds = String(now.getSeconds()).padStart(2, '0');
-            document.getElementById('clock').textContent = `${hours}:${minutes}:${seconds}`;
-        }
-
-        function updateBackgroundColor() {
-            const color = getRandomColor();
-            document.body.style.backgroundColor = color;
-            document.getElementById('hex').textContent = color;
-            // Log the color to the console for debugging
-            console.log(`Background color changed to: ${color}`);
-            // Change the text color to ensure visibility against the background
-            document.getElementById('clock').style.color = (parseInt(color.slice(1), 16) > 0xffffff / 2) ? 'black' : 'white';
-            // Update the text color of the hex value for better visibility
-            document.getElementById('hex').style.color = (parseInt(color.slice(1), 16) > 0xffffff / 2) ? 'black' : 'white';
-            
-            // Change the text color of the clock to ensure visibility against the background
-            document.getElementById('clock').style.textShadow = '2px 2px 4px rgba(0, 0, 0, 0.5)';
-            // Add a shadow effect to the clock text for better visibility
-            // The line below is a duplicate and can be removed
-            // 
-            // document.getElementById('clock').style.textShadow = '2px 2px 4px rgba(0, 0, 0, 0.5)';
-            
-            
-            
-        }
-
-        setInterval(updateClock, 1000);
-        setInterval(updateBackgroundColor, 1000);               
+        setInterval(updateTime, 1000);  // Run every 1000 ms
     </script>
 </body>
 </html>

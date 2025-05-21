@@ -1,0 +1,131 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+h1 {
+    margin: 0;
+}
+
+nav {
+    margin: 20px 0;
+}
+
+nav a {
+    color: #fff;
+    margin: 0 15px;
+    text-decoration: none;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+body {
+  background: linear-gradient(135deg, #74ebd5 0%, #ACB6E5 100%);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding: 20px;
+  min-height: 100vh;
+}
+
+.container {
+  background: rgba(255, 255, 255, 0.95);
+  padding: 35px 30px 30px 30px;
+  max-width: 420px;
+  margin: 40px auto;
+  border-radius: 18px;
+  border: 1px solid rgba(255,255,255,0.18);
+}
+
+.container:hover {
+  box-shadow: 0 12px 40px 0 rgba(31, 38, 135, 0.25);
+}
+
+h1 {
+  text-align: center;
+  color: #22223b;
+  letter-spacing: 2px;
+  margin-bottom: 18px;
+  font-size: 2.2em;
+  font-weight: 700;
+}
+
+form label {
+  display: block;
+  margin-top: 18px;
+  color: #3a3a3a;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+
+input {
+  width: 100%;
+  padding: 10px 12px;
+  margin-top: 7px;
+  border: 1.5px solid #bfc9d1;
+  border-radius: 7px;
+  font-size: 1em;
+  background: #f7fafc;
+  transition: border 0.2s;
+}
+
+input:focus {
+  border: 1.5px solid #007acc;
+  outline: none;
+  background: #eaf6fb;
+}
+
+.buttons {
+  margin-top: 28px;
+  display: flex;
+  justify-content: space-between;
+}
+
+button {
+  background: linear-gradient(90deg, #007acc 0%, #00c6fb 100%);
+  color: white;
+  border: none;
+  padding: 12px 22px;
+  border-radius: 7px;
+  font-weight: bold;
+  font-size: 1em;
+}
+
+button:hover {
+  background: linear-gradient(90deg, #005f99 0%, #00a6d6 100%);
+  transform: translateY(-2px) scale(1.04);
+  box-shadow: 0 4px 16px rgba(0, 122, 204, 0.18);
+}
+
+#output {
+  margin-top: 32px;
+  font-size: 1.2em;
+  color: #22223b;
+  text-align: center;
+  background: #eaf6fb;
+  border-radius: 8px;
+  padding: 18px 10px;
+  min-height: 40px;
+  letter-spacing: 1px;
+}
