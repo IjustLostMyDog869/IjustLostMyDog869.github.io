@@ -3,9 +3,87 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Jacob Casiano | Portfolio</title>
     <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Arial, sans-serif;
+            background: #f7f9fb;
+            color: #22223b;
+        }
+        nav {
+            background: #22223b;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        nav ul {
+            display: flex;
+            justify-content: center;
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+        nav li {
+            margin: 0 1.5em;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: 500;
+            padding: 1.2em 0;
+            display: block;
+            transition: color 0.2s;
+        }
+        nav a:hover {
+            color: #74ebd5;
+        }
+        header {
+            background: linear-gradient(120deg, #74ebd5 0%, #ACB6E5 100%);
+            padding: 4em 1em 3em 1em;
+            text-align: center;
+        }
+        header h1 {
+            font-size: 2.8em;
+            margin-bottom: 0.3em;
+            color: #22223b;
+        }
+        header p {
+            font-size: 1.3em;
+            color: #22223b;
+            opacity: 0.85;
+        }
+        section {
+            max-width: 700px;
+            margin: 2.5em auto;
+            background: #fff;
+            border-radius: 12px;
+            box-shadow: 0 2px 16px rgba(31,38,135,0.07);
+            padding: 2em 2em 1.5em 2em;
+        }
+        section h2 {
+            color: #007acc;
+            margin-top: 0;
+        }
+        ul {
+            padding-left: 1.2em;
+        }
+        footer {
+            text-align: center;
+            padding: 2em 0 1em 0;
+            color: #888;
+            font-size: 1em;
+            background: none;
+        }
+        @media (max-width: 600px) {
+            nav ul { flex-direction: column; }
+            nav li { margin: 0.5em 0; }
+            section { padding: 1.2em 0.7em; }
+            header h1 { font-size: 2em; }
+        }
+    </style>
 </head>
 <body>
     <!-- navbar begins -->
@@ -23,7 +101,10 @@
     </header>
     <section id="about">
         <h2>About Me</h2>
-        <p>I am a sophomore at Craig High School. My favorite hobbies are soccer, video games, and hanging out with friends. I also like the Star Wars movies.</p>
+        <p>
+            I'm passionate about building modern, responsive websites and learning new technologies. 
+            I enjoy solving problems and turning ideas into reality through code.
+        </p>
     </section>
     <section id="projects">
         <h2>Projects</h2>
@@ -34,7 +115,7 @@
     </section>
     <section id="contact">
         <h2>Contact Me</h2>
-        <p>You can reach me at casiano.j@stu.janesville.k12.wi.us</p>
+        <p>You can reach me at <a href="mailto:casiano.j@stu.janesville.k12.wi.us">casiano.j@stu.janesville.k12.wi.us</a></p>
         <p>Or follow me on social media:</p>
         <ul>
             <li><a href="https://www.facebook.com/jacob.casiano.3">Facebook</a></li>
@@ -47,6 +128,5 @@
     <footer>
         <p>&copy; 2023 Jacob Casiano</p>
     </footer>
-
 </body>
 </html>
