@@ -1,3 +1,5 @@
+// script.js
+// A simple Plexus effect using HTML5 Canvas
 const canvas = document.getElementById('plexus');
 const ctx = canvas.getContext('2d');
 
