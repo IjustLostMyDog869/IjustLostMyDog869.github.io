@@ -77,4 +77,66 @@ nav a:hover {
   color: #00c6fb;
 }
 
+body {
+  background: #181c25;
+  color: #eaf6fb;
+}
 
+.info-box.dark, .desc-box.dark {
+  background: rgba(24, 28, 37, 0.96);
+  border-radius: 14px;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.25);
+  padding: 24px 20px;
+  margin-bottom: 24px;
+  max-width: 350px;
+  margin-left: auto;
+  margin-right: auto;
+  color: #eaf6fb;
+}
+
+.desc-box.dark {
+  margin-bottom: 0;
+}
+
+.about-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-size: 1.13em;
+  color: #eaf6fb;
+  line-height: 2.1;
+}
+
+.about-list li {
+  margin-bottom: 8px;
+  display: flex;
+  align-items: center;
+}
+
+.about-list li span {
+  display: inline-block;
+  width: 90px;
+  color: #00c6fb;
+  font-weight: 600;
+  font-size: 1em;
+}
+
+.project-links {
+  list-style: none;
+  padding: 0;
+  margin-top: 1rem;
+  text-align: center;
+}
+
+.project-links li {
+  margin: 1rem 0;
+}
+
+.project-links a {
+  color: #fff;
+  font-size: 1.2rem;
+  text-decoration: underline;
+}
+.project-links a:hover {
+  color: #06daff;
+}
